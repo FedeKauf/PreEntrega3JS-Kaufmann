@@ -32,25 +32,45 @@ const productos = [
 ];
 
 const boton1 = document.getElementById("boton1");
+boton1.addEventListener("click", activarToastifyRemera);
 const boton2 = document.getElementById("boton2");
+boton2.addEventListener("click", activarToastifyRemera);
 const boton3 = document.getElementById("boton3");
+boton3.addEventListener("click", activarToastifyRemera);
 const boton4 = document.getElementById("boton4");
+boton4.addEventListener("click", activarToastifyRemera);
 const boton5 = document.getElementById("boton5");
+boton5.addEventListener("click", activarToastifyRemera);
 const boton6 = document.getElementById("boton6");
+boton6.addEventListener("click", activarToastifyChomba);
 const boton7 = document.getElementById("boton7");
+boton7.addEventListener("click", activarToastifyChomba);
 const boton8 = document.getElementById("boton8");
+boton8.addEventListener("click", activarToastifyChomba);
 const boton9 = document.getElementById("boton9");
+boton9.addEventListener("click", activarToastifyChomba);
 const boton10 = document.getElementById("boton10");
+boton10.addEventListener("click", activarToastifyChomba);
 const boton11 = document.getElementById("boton11");
+boton11.addEventListener("click", activarToastifyPantalon);
 const boton12 = document.getElementById("boton12");
+boton12.addEventListener("click", activarToastifyPantalon);
 const boton13 = document.getElementById("boton13");
+boton13.addEventListener("click", activarToastifyPantalon);
 const boton14 = document.getElementById("boton14");
+boton14.addEventListener("click", activarToastifyPantalon);
 const boton15 = document.getElementById("boton15");
+boton15.addEventListener("click", activarToastifyPantalon);
 const boton16 = document.getElementById("boton16");
+boton16.addEventListener("click", activarToastifyZapatillas);
 const boton17 = document.getElementById("boton17");
+boton17.addEventListener("click", activarToastifyZapatillas);
 const boton18 = document.getElementById("boton18");
+boton18.addEventListener("click", activarToastifyZapatillas);
 const boton19 = document.getElementById("boton19");
+boton19.addEventListener("click", activarToastifyZapatillas);
 const boton20 = document.getElementById("boton20");
+boton20.addEventListener("click", activarToastifyZapatillas);
 
 document.getElementById('vaciar-carrito').addEventListener('click', function() {
   Swal.fire({
@@ -94,6 +114,60 @@ document.getElementById('boton-terminar').addEventListener('click', function() {
     }
   })
 });
+
+function activarToastifyRemera() {
+  const Remera = {
+    text: "¡Agregaste una Remera al carrito!",
+    duration: 5000,
+    newWindow: true,
+    close: true,
+    gravity: "top",
+    position: "right",
+    backgroundColor: "linear-gradient(to right, #00b09b, #96c93d)",
+    stopOnFocus: true,
+  };
+  Toastify(Remera).showToast();
+}
+function activarToastifyChomba() {
+  const Chomba = {
+    text: "¡Agregaste una Chomba al carrito!",
+    duration: 5000,
+    newWindow: true,
+    close: true,
+    gravity: "top",
+    position: "right",
+    backgroundColor: "linear-gradient(to left, #00b09b, #96c93d)",
+    stopOnFocus: true,
+  };
+  Toastify(Chomba).showToast();
+}
+function activarToastifyPantalon() {
+  const Pantalon = {
+    text: "¡Agregaste un Pantalon al carrito!",
+    duration: 5000,
+    newWindow: true,
+    close: true,
+    gravity: "top",
+    position: "right",
+    backgroundColor: "linear-gradient(to right, #00b09b, #96c93d)",
+    stopOnFocus: true,
+  };
+  Toastify(Pantalon).showToast();
+}
+function activarToastifyZapatillas() {
+  const Zapatillas = {
+    text: "¡Agregaste Zapatillas al carrito!",
+    duration: 5000,
+    newWindow: true,
+    close: true,
+    gravity: "top",
+    position: "right",
+    backgroundColor: "linear-gradient(to left, #00b09b, #96c93d)",
+    stopOnFocus: true,
+  };
+  Toastify(Zapatillas).showToast();
+}
+
 
 boton1.addEventListener("click", () => {
   const producto = productos.find((item) => {
