@@ -74,6 +74,27 @@ document.getElementById('vaciar-carrito').addEventListener('click', function() {
   })
 });
 
+document.getElementById('boton-terminar').addEventListener('click', function() {
+  Swal.fire({
+    title: '¿Terminar compra?',
+    text: '¿Estás seguro que desea terminar la compra?',
+    icon: 'warning',
+    showCancelButton: true,
+    confirmButtonText: 'Sí, deseo finalizar la compra',
+    cancelButtonText: 'Cancelar'
+  }).then((result) => {
+    if (result.isConfirmed) {
+      carrito = [];
+      mostrarCarrito();
+      Swal.fire(
+        'Compra terminada',
+        'Gracias por comprar en Indumentaria Online',
+        'success'
+      )
+    }
+  })
+});
+
 boton1.addEventListener("click", () => {
   const producto = productos.find((item) => {
     return item.id === +boton1.dataset.id;
