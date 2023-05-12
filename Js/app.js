@@ -10,10 +10,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
 const productos = [
   new Producto(1, "RemeraAdidas", 100, 1, "Adidas", 1, "Blanca"),
-  new Producto(2, "RemeraNike", 200, 2, "Nike", 1, "Blanca"),
+  new Producto(2, "RemeraNike", 200, 1, "Nike", 1, "Blanca"),
   new Producto(3, "RemeraUnder", 300, 1, "Under", 1, "Negra"),
   new Producto(4, "RemeraZara", 400, 1, "Zara", 1, "Blanca"),
-  new Producto(5, "RemeraGucci", 200, 1, "Nike", 1, "Negra"),
+  new Producto(5, "RemeraGucci", 200, 1, "Gucci", 1, "Negra"),
   new Producto(6, "ChombaAdidas", 500, 1, "Adidas", 1, "Negra"),
   new Producto(7, "ChombaNike", 500, 1, "Nike", 1, "Blanca"),
   new Producto(8, "ChombaUnder", 500, 2, "Under", 1, "Azul"),
