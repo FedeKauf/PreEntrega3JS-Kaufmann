@@ -107,8 +107,8 @@ document.getElementById('boton-terminar').addEventListener('click', function() {
       carrito = [];
       mostrarCarrito();
       Swal.fire(
-        'Compra terminada',
-        'Gracias por comprar en Indumentaria Online',
+        'Compra guardada!',
+        'Recargando la página podrá ver lo que compró en Indumentaria Online',
         'success'
       )
     }
