@@ -111,11 +111,14 @@ a h2{
   }
   
   .card-content {
-    padding: 20px;
     text-align: center;
+    display: flex;
+    flex-wrap: wrap;
   }
   
   .card-content h3 {
+    text-align: center;
+    display: flex;
     margin-top: 10px;
   }
   
